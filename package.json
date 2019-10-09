@@ -1,0 +1,51 @@
+{
+  "name": "rrr-webassembly",
+  "version": "0.1.0",
+  "description": "React app for running Webassembly",
+  "main": "index.js",
+  "bin": {
+    "create-wasm-app": ".bin/create-wasm-app.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rustwasm/create-wasm-app.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Ashley Williams <ashley666ashley@gmail.com>",
+  "license": "(MIT OR Apache-2.0)",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "YOUR-WASM-FILE": "file:../pkg"
+  },
+  "dependencies": {
+    "history": "^4.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.1",
+    "redux-observable": "^1.1.0",
+    "rxjs": "^6.5.2"
+  }
+}
